@@ -1,0 +1,84 @@
+.main__slider {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding-top: 25vh;
+}
+
+.swiper-container {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  min-height: 270px;
+  font-family: "Russo One", sans-serif !important;
+  font-size: 64px !important;
+  line-height: 77px;
+  margin-bottom: 280px;
+  -webkit-text-stroke: 1px white;
+  -webkit-text-fill-color: black;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  text-align: center;
+  font-size: 18px;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+.swiper-pagination {
+  width: 100%;
+  height: 20px;
+}
+
+.swiper-pagination-bullet {
+  background-color: #fff !important;
+  opacity: 0.8 !important;
+  border-radius: 15px !important;
+  height: 3px !important;
+  width: 30px !important;
+}
+.swiper-pagination-bullet-active {
+  background-color: #7031e7 !important;
+}
+
+.main__slider-link {
+  position: absolute;
+  bottom: 160px;
+  left: calc(50% - 80px);
+  z-index: 3;
+  width: 160px;
+  height: 100px;
+  font-family: "Nunito", sans-serif;
+  font-size: 24px;
+  line-height: 33px;
+  color: #fff;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+@media (max-width: 860px) {
+  .main__slider {
+    padding-top: 170px;
+  }
+  .swiper-slide {
+    font-size: 30px !important;
+    line-height: 36px;
+  }
+}

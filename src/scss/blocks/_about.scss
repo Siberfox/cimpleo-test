@@ -1,0 +1,24 @@
+.main__about {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  padding: 100px 0;
+  overflow: hidden;
+
+  &-text {
+    font-family: "Nunito", sans-serif;
+    font-size: 20px;
+    line-height: 27px;
+    text-align: center;
+    margin-bottom: 57px;
+  }
+}
+
+@media (max-width: 860px) {
+  .main__about-text {
+    font-size: 16px;
+    line-height: 22px;
+  }
+}
